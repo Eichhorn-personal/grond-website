@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/grond.ai/static/css/main.b64fbe4c.css",
+    "main.js": "/grond.ai/static/js/main.3b1bb79c.js",
+    "static/media/grond.ai.png": "/grond.ai/static/media/grond.ai.04c2d2a87c185ab8f878.png",
+    "index.html": "/grond.ai/index.html",
+    "main.b64fbe4c.css.map": "/grond.ai/static/css/main.b64fbe4c.css.map",
+    "main.3b1bb79c.js.map": "/grond.ai/static/js/main.3b1bb79c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b64fbe4c.css",
+    "static/js/main.3b1bb79c.js"
+  ]
+}

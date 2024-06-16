@@ -4,6 +4,7 @@ import Header from './components/Header';
 
 import TitleSection from './components/TitleSection';
 import FeaturesSection from './components/FeaturesSection';
+import PricingSection from './components/PricingSection';
 
 function App() {
 
@@ -16,6 +17,8 @@ function App() {
             <TitleSection />
 
             <FeaturesSection />
+
+            <PricingSection />
 
         </div>
     );

@@ -8,7 +8,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5px;
-    max-width: 960px;
+    max-width: 960px; 
     padding-top: 25px;
     padding-bottom: 25px;
     margin: 0 auto;

@@ -1,32 +1,36 @@
+import './scss/bootstrap.scss';
 import './css/app.css';
 
 import Header from './components/Header';
-
 import TitleSection from './components/TitleSection';
 import FeaturesSection from './components/FeaturesSection';
 import PricingSection from './components/PricingSection';
-
 import Footer from './components/Footer';
 
-function App() {
+import { ThemeProvider } from './hooks/useThemeContext';
 
+export default function App() {
+    
     return (
-
-        <div>
-
-            <Header />
         
-            <TitleSection />
+        <div className='App'>
 
-            <FeaturesSection />
+            <ThemeProvider>
 
-            <PricingSection />
+                <Header />
 
-            <Footer />
+                <TitleSection />
+
+                <FeaturesSection />
+
+                <PricingSection />
+
+                <Footer />
+
+            </ThemeProvider>
 
         </div>
+        
     );
 
 }
-
-export default App;

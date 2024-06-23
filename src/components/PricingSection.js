@@ -1,75 +1,93 @@
 import * as React from 'react';
-
-import '../css/pricingsection.css';
+import { Row, Card, Button } from 'react-bootstrap';
 
 function PricingSection() {
 
     return (
 
-        <div id='PricingSection' className='custom-pricing-section-container'>
+        <div id='PricingSection' className='custom-section-size py-2 mx-auto px-3 px-md-0'>
 
-            <h1 className='custom-pricing-title'>Pricing Information</h1>
+            <h1 className='text-left'>Pricing Information</h1>
 
-            <div className='custom-pricing-flexbox'>
+            <Row className='custom-card-container-style'>
 
-                <div className='custom-pricing-card card w-300px p-2 mb-4'>
+                <Card bg='light' text='dark' className='custom-card-style'>
 
-                    <h4 className='card-header' style={{backgroundColor: "#CD7F32"}}>
+                    <Card.Header style={{backgroundColor: "#CD7F32", color: "white"}}>
+                    
                         Bronze Plan
-                    </h4>
 
-                    <h1 class="card-title pricing-card-title">$0<small class="text-body-secondary fw-light">/mo</small></h1>
+                    </Card.Header>
 
-                    <ul class="list-unstyled mt-3 mb-4">
-                        <li>10 Concurrent Users</li>
-                        <li>100 Tickets Per Day</li>
-                        <li>100 Escalations Per Day</li>
-                        <li>Unlimited App Usage</li>
-                    </ul>
+                    <Card.Body>
 
-                    <button type="button" class="btn btn-md btn-outline-dark">Sign up for free</button>
+                        <Card.Title><h2>$0<small className='text-muted'>/mo</small></h2></Card.Title>
 
-                </div>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>10 Concurrent Users</li>
+                            <li>100 Tickets Per Day</li>
+                            <li>100 Escalations Per Day</li>
+                            <li>Unlimited App Usage</li>
+                        </ul>
 
-                <div className='custom-pricing-card card w-300px p-2 mb-4'>
+                        <Button variant='outline-dark' className='custom-card-button-style'>Sign up for free</Button>
 
-                    <h4 className='card-header' style={{backgroundColor: "#C0C0C0"}}>
+                    </Card.Body>
+
+
+                </Card>
+
+                <Card bg='light' text='dark' className='custom-card-style'>
+
+                    <Card.Header style={{backgroundColor: "#C0C0C0", color: "black"}}>
+
                         Silver Plan
-                    </h4>
 
-                    <h1 class="card-title pricing-card-title">$99<small class="text-body-secondary fw-light">/mo</small></h1>
+                    </Card.Header>
 
-                    <ul class="list-unstyled mt-3 mb-4">
-                        <li>100 Concurrent Users</li>
-                        <li>Unlimited Tickets</li>
-                        <li>Unlimited Escalations</li>
-                        <li>Unlimited App Usage</li>
-                    </ul>
+                    <Card.Body>
 
-                    <button type="button" class="btn btn-md btn-dark">Get started</button>
+                        <Card.Title><h2>$99<small className='text-muted'>/mo</small></h2></Card.Title>
 
-                </div>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>100 Concurrent Users</li>
+                            <li>Unlimited Tickets</li>
+                            <li>Unlimited Escalations</li>
+                            <li>Unlimited App Usage</li>
+                        </ul>
 
-                <div className='custom-pricing-card card w-300px p-2 mb-4'>
+                        <button type="button" class="btn btn-dark custom-card-button-style">Get started</button>
 
-                    <h4 className='card-header' style={{backgroundColor: "#D4AF37"}}>
+                    </Card.Body>
+
+                </Card>
+
+                <Card bg='light' text='dark' className='custom-card-style'>
+
+                    <Card.Header style={{backgroundColor: "#D4AF37", color: "black"}}>
+
                         Gold Plan
-                    </h4>
 
-                    <h1 class="card-title pricing-card-title">$299<small class="text-body-secondary fw-light">/mo</small></h1>
+                    </Card.Header>
 
-                    <ul class="list-unstyled mt-3 mb-4">
-                        <li>Unlimited Users</li>
-                        <li>Priority Support</li>
-                        <li>Unlimited Tickets & Escalations</li>
-                        <li>Unlimited App Usage</li>
-                    </ul>
+                    <Card.Body>
 
-                    <button type="button" class="btn btn-md btn-dark">Contact us</button>
+                        <Card.Title><h2>$299<small className='text-muted'>/mo</small></h2></Card.Title>
 
-                </div>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Unlimited Users</li>
+                            <li>Priority Support</li>
+                            <li>Unlimited Tickets & Escalations</li>
+                            <li>Unlimited App Usage</li>
+                        </ul>
 
-            </div>
+                        <button type="button" class="btn btn-dark custom-card-button-style">Contact us</button>
+
+                    </Card.Body>
+
+                </Card>
+
+            </Row>
 
         </div>
         

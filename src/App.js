@@ -6,6 +6,8 @@ import TitleSection from './components/TitleSection';
 import FeaturesSection from './components/FeaturesSection';
 import PricingSection from './components/PricingSection';
 
+import Footer from './components/Footer';
+
 function App() {
 
     return (
@@ -19,6 +21,8 @@ function App() {
             <FeaturesSection />
 
             <PricingSection />
+
+            <Footer />
 
         </div>
     );

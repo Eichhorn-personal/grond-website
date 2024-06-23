@@ -1,0 +1,20 @@
+.custom-footer-flexbox {
+    display: flex;
+    gap: 10px;
+    background-color: aquamarine;
+    color: black;
+    bottom: 0;
+    left: 0;
+    width: '100%';
+}
+
+.custom-footer-copywrite {
+    font-size:small;
+    margin-left: 20px;
+    margin: 0;
+}
+
+.custom-svg {
+    width: 24px;
+    fill: black;
+}

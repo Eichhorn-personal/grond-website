@@ -67,7 +67,7 @@ function PricingSection() {
 
                     <button type="button" class="btn btn-md btn-dark">Contact us</button>
 
-                    </div>
+                </div>
 
             </div>
 

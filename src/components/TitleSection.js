@@ -1,4 +1,5 @@
-import '../css/titlesection.css';
+import * as React from 'react';
+import { Col, Row } from 'react-bootstrap';
 
 import grondlogo from '../images/grond.ai.png';
 
@@ -6,35 +7,37 @@ function TitleSection() {
 
     return (
 
-        <div id='TitleSection' className='title-gradient-background'>
+        <div id='TitleSection' className='custom-section-size py-2 mx-auto px-3 px-md-0 border-bottom'>
 
-            <div className='title-grid-container'>
+            <Row>
 
-                <h1 className='title-grid-item-tagline'>grond.ai</h1>
+                <Col className='md-6'>
                 
-                <p className='title-grid-item-subtag'>
-                    Reimagine how you prioritze and handle process change 
-                    in your software design lifecycle. Make critical change 
-                    quicker and deliver the value your consumers want faster.
+                    <h1 className='mt-2 mb-4' style={{color:'#e6a800'}}>grond.ai</h1>
 
-                </p>
-                
-                <div className='title-grid-item-logo'>
+                    <p className=''>
+                        Reimagine how you prioritze and handle process change 
+                        in your software design lifecycle. Make critical change 
+                        quicker and deliver the value your consumers want faster.
+                    </p>
+
+                </Col>
+
+                <Col className='md-6 d-flex justify-content-center align-items-center mb-4'>
+
                     <img
                         src={grondlogo}
                         alt='grond.ai company logo'
                         height='300'
                         loading='lazy'
                     />
-                </div>
-               
 
+                </Col>
 
-
-            </div>    
-
-        </div>
-        
+            </Row>
+            
+        </div>    
+       
     );
 
 }

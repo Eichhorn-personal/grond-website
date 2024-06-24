@@ -13,7 +13,7 @@ export default function App() {
     
     return (
         
-        <div className='App'>
+        <div className='App gradient-background'>
 
             <ThemeProvider>
 

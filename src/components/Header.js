@@ -12,7 +12,7 @@ export default function Header() {
 
                 <div className='h4 mb-0'>
 
-                    Header.js Component                
+
                 
                 </div>
 

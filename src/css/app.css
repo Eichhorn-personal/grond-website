@@ -1,13 +1,5 @@
 .App {
     font-family: 'Ubuntu', sans-serif;
-/*    
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-*/
 }
 
 body {
@@ -20,6 +12,12 @@ code {
     monospace;
 }
 
+.gradient-background {
+    background: linear-gradient(300deg, #000000, #394046, #2e3338);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+}
+
 .custom-section-size {
     max-width: 960px;
     width: 100%;
@@ -27,18 +25,55 @@ code {
 
 .custom-card-style {
     width: 300px;
+    height: 400px;
     text-align: center;
     padding-top: 20px;
+}
+
+.custom-card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-card-content {
+    flex-grow: 1;
+}
+
+.custom-card-button-container {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .custom-card-button-style {
     width: 100%;
 }
 
-.custom-card-container-style {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+.custom-feature-card {
+    width: 300px;
+    height: 130px;
+    text-align: left;
 }
 
+@media (min-width: 768px) {
+    .custom-row {
+        justify-content: start !important;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .custom-row {
+        justify-content: center !important;
+    }
+}
+
+@keyframes gradient-animation {
+    0% {
+    background-position: 0% 50%;
+    }
+    50% {
+    background-position: 100% 50%;
+    }
+    100% {
+    background-position: 0% 50%;
+    }
+}

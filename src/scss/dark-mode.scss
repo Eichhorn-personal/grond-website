@@ -18,7 +18,6 @@ html[darkmode] {
   @each $color, $value in $theme-colors {
     --#{$variable-prefix}#{$color}: #{$value};
   }
-
   
   $theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
 

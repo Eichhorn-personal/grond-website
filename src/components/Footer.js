@@ -10,7 +10,7 @@ export default function Footer() {
 
             <div className='custom-section-size d-flex justify-content-between align-items-center py-2 mx-auto px-3 px-md-0'>
 
-                <div className='small mb-0'>
+                <div className='small mb-0' style={{color: "white"}}>
 
                     © 2024 grond.ai. All rights reserved.
 

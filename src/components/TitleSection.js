@@ -15,7 +15,7 @@ function TitleSection() {
                 
                     <h1 className='custom-section-title-text mt-2 mb-4'>grond.ai</h1>
 
-                    <p className=''>
+                    <p className='' style={{color: "white"}}>
                         Reimagine how you prioritze and handle process change 
                         in your software design lifecycle. Make critical change 
                         quicker and deliver the value your consumers want faster.

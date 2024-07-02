@@ -20,14 +20,10 @@ function FeaturesSection() {
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 height="30"
-                                width="30"
                                 fill="currentColor"
-                                class="bi bi-check2-circle"
+                                class="bi bi-1-circle"
                                 viewBox="0 0 16 16">
-                                <path
-                                    d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
-                                <path
-                                    d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+                                <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383z"/>
                             </svg>
 
                         </Col>
@@ -36,7 +32,7 @@ function FeaturesSection() {
 
                             <h4 className='mb-0'>Easy to use</h4>
 
-                            <p className=''>So easy to use, even your dog could do it.</p>
+                            <p className=''>Fast, streamlined, and efficient</p>
 
                         </Col>
 
@@ -54,21 +50,18 @@ function FeaturesSection() {
                                 xmlns="http://www.w3.org/2000/svg"
                                 height="30"
                                 fill="currentColor"
-                                class="bi bi-mortarboard"
+                                class="bi bi-2-circle"
                                 viewBox="0 0 16 16">
-                                <path
-                                    d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5ZM8 8.46 1.758 5.965 8 3.052l6.242 2.913L8 8.46Z" />
-                                <path
-                                    d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46l-3.892-1.556Z" />
+                                <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.646 6.24v.07H5.375v-.064c0-1.213.879-2.402 2.637-2.402 1.582 0 2.613.949 2.613 2.215 0 1.002-.6 1.667-1.287 2.43l-.096.107-1.974 2.22v.077h3.498V12H5.422v-.832l2.97-3.293c.434-.475.903-1.008.903-1.705 0-.744-.557-1.236-1.313-1.236-.843 0-1.336.615-1.336 1.306"/>  
                             </svg>
-                                                
+
                         </Col>
 
                         <Col xs={10} md={10}>
 
-                            <h4 className='mb-0'>Elite Clientele</h4>
+                            <h4 className='mb-0'>Status Reports</h4>
 
-                            <p className=''>We have all the dogs, the greatest dogs.</p>
+                            <p className=''>Visual Reporting that makes sense</p>
 
                         </Col>
 
@@ -86,19 +79,19 @@ function FeaturesSection() {
                                 xmlns="http://www.w3.org/2000/svg"
                                 height="30"
                                 fill="currentColor"
-                                class="bi bi-arrow-through-heart"
+                                class="bi bi-3-circle"
                                 viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M2.854 15.854A.5.5 0 0 1 2 15.5V14H.5a.5.5 0 0 1-.354-.854l1.5-1.5A.5.5 0 0 1 2 11.5h1.793l.53-.53c-.771-.802-1.328-1.58-1.704-2.32-.798-1.575-.775-2.996-.213-4.092C3.426 2.565 6.18 1.809 8 3.233c1.25-.98 2.944-.928 4.212-.152L13.292 2 12.147.854A.5.5 0 0 1 12.5 0h3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.854.354L14 2.707l-1.006 1.006c.236.248.44.531.6.845.562 1.096.585 2.517-.213 4.092-.793 1.563-2.395 3.288-5.105 5.08L8 13.912l-.276-.182a21.86 21.86 0 0 1-2.685-2.062l-.539.54V14a.5.5 0 0 1-.146.354l-1.5 1.5Zm2.893-4.894A20.419 20.419 0 0 0 8 12.71c2.456-1.666 3.827-3.207 4.489-4.512.679-1.34.607-2.42.215-3.185-.817-1.595-3.087-2.054-4.346-.761L8 4.62l-.358-.368c-1.259-1.293-3.53-.834-4.346.761-.392.766-.464 1.845.215 3.185.323.636.815 1.33 1.519 2.065l1.866-1.867a.5.5 0 1 1 .708.708L5.747 10.96Z" />
+                                <path d="M7.918 8.414h-.879V7.342h.838c.78 0 1.348-.522 1.342-1.237 0-.709-.563-1.195-1.348-1.195-.79 0-1.312.498-1.348 1.055H5.275c.036-1.137.95-2.115 2.625-2.121 1.594-.012 2.608.885 2.637 2.062.023 1.137-.885 1.776-1.482 1.875v.07c.703.07 1.71.64 1.734 1.917.024 1.459-1.277 2.396-2.93 2.396-1.705 0-2.707-.967-2.754-2.144H6.33c.059.597.68 1.06 1.541 1.066.973.006 1.6-.563 1.588-1.354-.006-.779-.621-1.318-1.541-1.318"/>
+                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8"/>
                             </svg>
-                                
+
                         </Col>
 
                         <Col xs={10} md={10}>
 
-                            <h4 className='mb-0'>Guaranteed to work</h4>
+                            <h4 className='mb-0'>Business value</h4>
 
-                            <p className='custom-feature-card-text'>Find the love of your dog's life or your money back.</p>
+                            <p className='custom-feature-card-text'>Prioritze change quicker and provide value faster.</p>
 
                         </Col>
 
@@ -116,19 +109,19 @@ function FeaturesSection() {
                                 xmlns="http://www.w3.org/2000/svg"
                                 height="30"
                                 fill="currentColor"
-                                class="bi bi-arrow-through-heart"
+                                class="bi bi-check2-circle"
                                 viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M2.854 15.854A.5.5 0 0 1 2 15.5V14H.5a.5.5 0 0 1-.354-.854l1.5-1.5A.5.5 0 0 1 2 11.5h1.793l.53-.53c-.771-.802-1.328-1.58-1.704-2.32-.798-1.575-.775-2.996-.213-4.092C3.426 2.565 6.18 1.809 8 3.233c1.25-.98 2.944-.928 4.212-.152L13.292 2 12.147.854A.5.5 0 0 1 12.5 0h3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.854.354L14 2.707l-1.006 1.006c.236.248.44.531.6.845.562 1.096.585 2.517-.213 4.092-.793 1.563-2.395 3.288-5.105 5.08L8 13.912l-.276-.182a21.86 21.86 0 0 1-2.685-2.062l-.539.54V14a.5.5 0 0 1-.146.354l-1.5 1.5Zm2.893-4.894A20.419 20.419 0 0 0 8 12.71c2.456-1.666 3.827-3.207 4.489-4.512.679-1.34.607-2.42.215-3.185-.817-1.595-3.087-2.054-4.346-.761L8 4.62l-.358-.368c-1.259-1.293-3.53-.834-4.346.761-.392.766-.464 1.845.215 3.185.323.636.815 1.33 1.519 2.065l1.866-1.867a.5.5 0 1 1 .708.708L5.747 10.96Z" />
-                            </svg>
-                                
+                                <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                                <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+                            </svg>  
+
                         </Col>
 
                         <Col xs={10} md={10}>
 
-                            <h4 className='mb-0'>mattis molestie a</h4>
+                            <h4 className='mb-0'>duis tristique</h4>
 
-                            <p className='custom-feature-card-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
+                            <p className='custom-feature-card-text'>tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus</p>
 
                         </Col>
 
@@ -158,7 +151,7 @@ function FeaturesSection() {
 
                             <h4 className='mb-0'>mattis molestie a</h4>
 
-                            <p className='custom-feature-card-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
+                            <p className='custom-feature-card-text'>tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque</p>
 
                         </Col>
 
@@ -187,9 +180,9 @@ function FeaturesSection() {
 
                         <Col xs={10} md={10}>
 
-                            <h4 className='mb-0'>mattis molestie a</h4>
+                            <h4 className='mb-0'>facilisis magna</h4>
 
-                            <p className='custom-feature-card-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
+                            <p className='custom-feature-card-text'>blandit aliquam etiam erat velit scelerisque in dictum</p>
 
                         </Col>
 

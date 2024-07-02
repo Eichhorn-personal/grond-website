@@ -7,11 +7,11 @@ function PricingSection() {
 
         <div id='PricingSection' className='custom-section-size py-2 mx-auto px-3 px-md-0 border-bottom'>
 
-            <h1 className='text-left mt-2 mb-4' style={{color:'#e6a800'}}>Pricing Information</h1>
+            <h1 className='custom-section-title-text mt-2 mb-4'>Pricing Information</h1>
 
             <Row className='row-cols-1 row-cols-md-3 g-4 custom-row'>
 
-                <Card bg='light' text='dark' className='custom-card-style me-md-4'>
+                <Card bg='light' text='dark' className='custom-card-style gradient-background-bronze me-md-4'>
 
                     <Card.Header style={{backgroundColor: "#CD7F32", color: "white"}}>
                     
@@ -36,7 +36,7 @@ function PricingSection() {
 
                         <div className='custom-card-button-container'>
 
-                            <Button variant='outline-dark' className='custom-card-button-style'>Sign up for free</Button>
+                            <Button variant='btn btn-light' className='custom-card-button-style'>Sign up for free</Button>
                         
                         </div>
 
@@ -44,7 +44,7 @@ function PricingSection() {
 
                 </Card>
 
-                <Card bg='light' text='dark' className='custom-card-style me-md-4'>
+                <Card bg='light' text='dark' className='custom-card-style gradient-background-silver me-md-4'>
 
                     <Card.Header style={{backgroundColor: "#C0C0C0", color: "black"}}>
 
@@ -77,7 +77,7 @@ function PricingSection() {
 
                 </Card>
 
-                <Card bg='light' text='dark' className='custom-card-style mb-4'>
+                <Card bg='light' text='dark' className='custom-card-style gradient-background-gold mb-4'>
 
                     <Card.Header style={{backgroundColor: "#D4AF37", color: "black"}}>
 

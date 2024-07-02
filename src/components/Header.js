@@ -8,15 +8,17 @@ export default function Header() {
 
         <header className='w-100'>
 
-            <div className='custom-section-size d-flex justify-content-between align-items-center py-2 mx-auto px-3 px-md-0'>
+            <div className='d-flex justify-content-between align-items-center py-2 mx-auto px-3 px-md-0'>
 
-                <div className='h4 mb-0'>
+                <p className='mb-0 ms-5 fs-6'>
 
+                    grond.ai
 
                 
-                </div>
-
-                <ThemeSwitch />
+                </p>
+                
+                {/*  Disabling themeing until needed    */}
+                {/*  <ThemeSwitch />                    */}
 
             </div>
 

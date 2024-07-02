@@ -7,15 +7,15 @@ function FeaturesSection() {
 
         <div id='FeaturesSection' className='custom-section-size py-2 mx-auto px-3 px-md-0 border-bottom'>
 
-            <h1 className='mt-2 mb-4' style={{color:'#e6a800'}}>Product Features</h1>
+            <h1 className='custom-section-title-text mt-2 mb-4'>Product Features</h1>
 
             <Row className='row-cols-1 row-cols-md-3 g-4 mb-4 custom-row'>
 
-                <Card className='custom-feature-card p-0 me-md-4 border-0'>
+                <Card className='custom-feature-card gradient-background-light pt-2 ps-0 me-md-4 border-0'>
 
                     <Row className='g-0'>
       
-                        <Col xs={2} md={2} className='d-flex justify-content-center p-1'>
+                        <Col xs={2} md={2} className='d-flex justify-content-center'>
 
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -44,11 +44,11 @@ function FeaturesSection() {
 
                 </Card>
 
-                <Card className='custom-feature-card p-0 me-md-4 border-0'>
+                <Card className='custom-feature-card gradient-background-light pt-2 ps-0 me-md-4 border-0'>
 
                     <Row className='g-0'>
 
-                        <Col xs={2} md={2} className='d-flex justify-content-center p-1'>
+                        <Col xs={2} md={2} className='d-flex justify-content-center'>
 
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -76,11 +76,11 @@ function FeaturesSection() {
 
                 </Card>
 
-                <Card className='custom-feature-card p-0 me-md-4 border-0'>
+                <Card className='custom-feature-card gradient-background-light pt-2 ps-0 me-md-4 border-0'>
 
                     <Row className='g-0'>
 
-                        <Col xs={2} md={2} className='d-flex justify-content-center p-1'>
+                        <Col xs={2} md={2} className='d-flex justify-content-center'>
 
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -98,7 +98,7 @@ function FeaturesSection() {
 
                             <h4 className='mb-0'>Guaranteed to work</h4>
 
-                            <p className=''>Find the love of your dog's life or your money back.</p>
+                            <p className='custom-feature-card-text'>Find the love of your dog's life or your money back.</p>
 
                         </Col>
 
@@ -106,7 +106,7 @@ function FeaturesSection() {
 
                 </Card> 
 
-                <Card className='custom-feature-card p-0 me-md-4 border-0'>
+                <Card className='custom-feature-card gradient-background-light pt-2 ps-0 me-md-4 border-0'>
 
                     <Row className='g-0'>
 
@@ -128,13 +128,74 @@ function FeaturesSection() {
 
                             <h4 className='mb-0'>mattis molestie a</h4>
 
-                            <p className=''>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
+                            <p className='custom-feature-card-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
 
                         </Col>
 
                     </Row>
 
-                </Card>                         
+                </Card>      
+
+                 <Card className='custom-feature-card gradient-background-light pt-2 ps-0 me-md-4 border-0'>
+
+                    <Row className='g-0'>
+
+                        <Col xs={2} md={2} className='d-flex justify-content-center p-1'>
+
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="30"
+                                fill="currentColor"
+                                class="bi bi-question-circle"
+                                viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94"/>
+                            </svg>
+                                
+                        </Col>
+
+                        <Col xs={10} md={10}>
+
+                            <h4 className='mb-0'>mattis molestie a</h4>
+
+                            <p className='custom-feature-card-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
+
+                        </Col>
+
+                    </Row>
+
+                </Card>                   
+
+                <Card className='custom-feature-card gradient-background-light pt-2 ps-0 me-md-4 border-0'>
+
+                    <Row className='g-0'>
+
+                        <Col xs={2} md={2} className='d-flex justify-content-center p-1'>
+
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="30"
+                                fill="currentColor"
+                                class="bi bi-info-circle"
+                                viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                    <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>                            
+                            </svg>  
+
+                                
+                        </Col>
+
+                        <Col xs={10} md={10}>
+
+                            <h4 className='mb-0'>mattis molestie a</h4>
+
+                            <p className='custom-feature-card-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
+
+                        </Col>
+
+                    </Row>
+
+                </Card>                   
 
             </Row>
 

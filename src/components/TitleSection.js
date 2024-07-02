@@ -13,7 +13,7 @@ function TitleSection() {
 
                 <Col className='md-6'>
                 
-                    <h1 className='mt-2 mb-4' style={{color:'#e6a800'}}>grond.ai</h1>
+                    <h1 className='custom-section-title-text mt-2 mb-4'>grond.ai</h1>
 
                     <p className=''>
                         Reimagine how you prioritze and handle process change 

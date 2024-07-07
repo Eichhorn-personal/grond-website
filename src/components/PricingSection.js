@@ -7,7 +7,7 @@ function PricingSection() {
 
         <div id='PricingSection' className='custom-section-size py-2 mx-auto px-3 px-md-0 border-bottom'>
 
-            <h1 className='custom-section-title-text mt-2 mb-4'>Pricing Information</h1>
+            <h1 id='pricing' className='custom-section-title-text mt-2 mb-4'>Pricing Information</h1>
 
             <Row className='row-cols-1 row-cols-md-3 g-4 custom-row'>
 

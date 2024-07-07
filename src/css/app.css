@@ -42,6 +42,11 @@ code {
     animation: gradient-animation 18s ease infinite;
 }
 
+.custom-white-text {
+    color: #ffffff !important;
+    font-weight: normal;
+}
+
 .custom-section-title-text {
     color: #C1A96E;
 }

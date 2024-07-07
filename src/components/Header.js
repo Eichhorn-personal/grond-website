@@ -1,24 +1,45 @@
 import * as React from 'react';
 
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+
+import '../css/app.css';
+
 export default function Header() {
 
     return (
 
-        <header className='w-100'>
 
-            <div className='d-flex justify-content-between align-items-center py-2 mx-auto px-3 px-md-0'>
+            <Navbar collapseOnSelect expand='lg' className='w-100 custom-white-text'>
+                            
+                <Navbar.Brand href="#home" className='mb-0 ms-5 fs-6 text-start custom-white-text'>grond.ai</Navbar.Brand>
 
-                <p className='mb-0 ms-5 fs-6' style={{color: "white"}}>
+                <Navbar.Toggle aria-controls='responsive-navbar-nav' />
 
-                    grond.ai
+                <Navbar.Collapse id='responsive-navbar-nav'>
 
+                    <Nav className='me-auto'>
+
+                        <Nav.Link href='#features' className='custom-white-text'>Features</Nav.Link>
+
+                        <Nav.Link href='#pricing' className='custom-white-text'>Pricing</Nav.Link>
+
+                    </Nav>
+
+                </Navbar.Collapse>
+
+                <Nav.Link
+                    href='https://github.com/Eichhorn-personal'
+                    target='_blank'
+                    className='custom-white-text me-5'
+                >
                 
-                </p>
+                Frodo
                 
-             </div>
+                </Nav.Link>
 
-        </header>
-    
+            </Navbar>
+
     )
 
 }

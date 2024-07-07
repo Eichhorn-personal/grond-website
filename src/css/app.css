@@ -13,21 +13,21 @@ code {
 }
 
 .gradient-background-dark {
-    background: linear-gradient(300deg, #000000, #394046, #2e3338);
+    background: linear-gradient(360deg, #000000, #394046, #2e3338);
     background-size: 180% 180%;
     animation: gradient-animation 18s ease infinite;
 }
 
 .gradient-background-light {
-    background: linear-gradient(300deg, #cccccc, #e6e6e6, #ffffff);
+    background: linear-gradient(135deg, #cccccc, #e6e6e6, #ffffff);
     background-size: 180% 180%;
     animation: gradient-animation 18s ease infinite;
 }
 
 .gradient-background-bronze {
-    background: linear-gradient(300deg, #faf2ea, #f0d9c1, #e6bf98);
+    background: linear-gradient(180deg, #faf2ea, #f0d9c1, #e6bf98);
     background-size: 180% 180%;
-    animation: gradient-animation 18s ease infinite;
+    animation: gradient-animation 9s ease infinite;
 }
 
 .gradient-background-silver {

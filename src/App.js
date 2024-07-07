@@ -1,4 +1,3 @@
-import './scss/bootstrap.scss';
 import './css/app.css';
 
 import Header from './components/Header';
@@ -7,15 +6,11 @@ import FeaturesSection from './components/FeaturesSection';
 import PricingSection from './components/PricingSection';
 import Footer from './components/Footer';
 
-import { ThemeProvider } from './hooks/useThemeContext';
-
 export default function App() {
     
     return (
         
         <div className='App gradient-background-dark'>
-
-            <ThemeProvider>
 
                 <Header />
 
@@ -26,8 +21,6 @@ export default function App() {
                 <PricingSection />
 
                 <Footer />
-
-            </ThemeProvider>
 
         </div>
         

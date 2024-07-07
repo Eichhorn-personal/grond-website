@@ -1,7 +1,5 @@
 import * as React from 'react';
 
-import ThemeSwitch from '../components/ThemeSwitch';
-
 export default function Header() {
 
     return (
@@ -17,10 +15,7 @@ export default function Header() {
                 
                 </p>
                 
-                {/*  Disabling themeing until needed    */}
-                {/*  <ThemeSwitch />                    */}
-
-            </div>
+             </div>
 
         </header>
     

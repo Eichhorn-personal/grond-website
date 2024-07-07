@@ -29,7 +29,7 @@ export default function Header() {
                 </Navbar.Collapse>
 
                 <Nav.Link
-                    href='https://github.com/Eichhorn-personal'
+                    href='https://eichhorn-personal.github.io/frodo-alpha/'
                     target='_blank'
                     className='custom-white-text me-5'
                 >

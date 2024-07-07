@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/grond.ai/static/css/main.1cbfe73a.css",
-    "main.js": "/grond.ai/static/js/main.30a78822.js",
+    "main.css": "/grond.ai/static/css/main.c3e869e5.css",
+    "main.js": "/grond.ai/static/js/main.327dc81b.js",
     "static/media/grond.ai.png": "/grond.ai/static/media/grond.ai.04c2d2a87c185ab8f878.png",
     "index.html": "/grond.ai/index.html",
-    "main.1cbfe73a.css.map": "/grond.ai/static/css/main.1cbfe73a.css.map",
-    "main.30a78822.js.map": "/grond.ai/static/js/main.30a78822.js.map"
+    "main.c3e869e5.css.map": "/grond.ai/static/css/main.c3e869e5.css.map",
+    "main.327dc81b.js.map": "/grond.ai/static/js/main.327dc81b.js.map"
   },
   "entrypoints": [
-    "static/css/main.1cbfe73a.css",
-    "static/js/main.30a78822.js"
+    "static/css/main.c3e869e5.css",
+    "static/js/main.327dc81b.js"
   ]
 }

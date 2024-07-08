@@ -1,24 +1,25 @@
 import React, {useState} from 'react';
-
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-
-import Header from './components/Header';
-import TitleSection from './components/TitleSection';
-import FeaturesSection from './components/FeaturesSection';
-import PricingSection from './components/PricingSection';
-import Footer from './components/Footer';
-
+import Layout from './components/Layout.js';
 import Login from './components/Login.Component.js';
 import SignUp from './components/Signup.Component.js';
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/app.css';
 
-export default function App() {
-
+function App() {
     const [showLogin, setShowLogin] = useState(false);
+    const [showSignUp, setShowSignUp] = useState(false);
 
-    const handleLoginSubmit = ({email, password, rememberMe}) => {
+    const handleSubmitSignUp = ({firstName, lastName, email, password}) => {
+        // Handle the signup logic here
+        console.log('First name: ', firstName);
+        console.log('Last name: ', lastName);
+        console.log('Email: ', email);
+        console.log('Password: ', password);
+        setShowSignUp(false);
+    }
+
+    const handleSubmitLogin = ({email, password, rememberMe}) => {
         // Handle the login logic here
         console.log('Email: ', email);
         console.log('Password: ', password);
@@ -30,48 +31,54 @@ export default function App() {
         setShowLogin(true);
     };
 
-    const handleClose = () => {
+    const handleCloseLogin = () => {
         // Handle closing logic here
-        console.log('handleClose called');
         setShowLogin(false);
     };
 
+    const handleShowSignUp = () => {
+        setShowSignUp(true);
+    };
+
+    const handleCloseSignUp = () => {
+        // Handle closing logic here
+        setShowSignUp(false);
+    };
+
     return (
-        
-        <div className='App gradient-background-dark'>
 
-            <Router>           
+        <>
+            <Layout handleShowLogin={handleShowLogin} handleShowSignUp={handleShowSignUp} />
+            
+            {showLogin && (
+                <Login handleSubmitLogin={handleSubmitLogin} handleCloseLogin={handleCloseLogin} />
+            )}
 
-                <Header handleShowLogin={handleShowLogin} />
+            {showSignUp && (
+                <SignUp handleSubmitSignUp={handleSubmitSignUp} handleCloseSignUp={handleCloseSignUp} />
+            )}
 
-                <Routes>
 
-                    <Route path='/' element= {
-                       
-                        <>
-
-                            <TitleSection />
-
-                            <FeaturesSection />
-
-                            <PricingSection />
-
-                        </>
-
-                    } />
-
-                    <Route path='/login' element={<Login show={showLogin} handleSubmit={handleLoginSubmit} handleClose={handleClose} />} />
-                    
-                    <Route path='/signup' element={<SignUp />} />
-
-                </Routes>
-
-            </Router>
-
-            <Footer />
-
-        </div>
-        
+            <Routes>
+                <Route path="/" element={<Layout handleShowLogin={handleShowLogin} handleShowSignUp={handleShowSignUp} />} />
+                <Route path='/login' element={<Login showLogin={showLogin} handleSubmitLogin={handleSubmitLogin} handleCloseLogin={handleCloseLogin} />} />
+                <Route path='/signup' element={<SignUp showSignUp={showSignUp} handleSubmitSignUp={handleSubmitSignUp} handleCloseSignUp={handleCloseSignUp} />} />
+            </Routes>
+        </>
     );
 
+}
+
+export default function AppWrapper() {
+
+    return (
+
+        <Router>
+            <Routes>
+
+            <Route path='*' element={<App />} />
+
+            </Routes>
+        </Router>
+    );
 }

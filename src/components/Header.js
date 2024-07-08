@@ -1,13 +1,10 @@
 import React, {useState} from 'react';
-
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-
 import {LinkContainer} from 'react-router-bootstrap';
-
 import '../css/app.css';
 
-export default function Header({handleShowLogin}) {
+export default function Header({handleShowLogin, handleShowSignUp}) {
 
     return (
 
@@ -49,7 +46,7 @@ export default function Header({handleShowLogin}) {
 
                 <LinkContainer to='/signup'>
 
-                    <Nav.Link className='custom-white-text'>Sign Up</Nav.Link>
+                    <Nav.Link onClick={handleShowSignUp} className='custom-white-text'>Sign Up</Nav.Link>
 
                 </LinkContainer>
 

@@ -1,7 +1,8 @@
-import React, {useState} from 'react';
+import React from 'react';
+
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import {LinkContainer} from 'react-router-bootstrap';
+
 import '../css/app.css';
 
 export default function Header({handleShowLogin, handleShowSignUp}) {
@@ -19,17 +20,13 @@ export default function Header({handleShowLogin, handleShowSignUp}) {
                 <Nav className='me-auto'>
 
                     <Nav.Link href='#features' className='custom-white-text'>Features</Nav.Link>
-
                     <Nav.Link href='#pricing' className='custom-white-text'>Pricing</Nav.Link>
-
                     <Nav.Link
                     href='https://eichhorn-personal.github.io/frodo-alpha/'
                     target='_blank'
                     className='custom-white-text me-5'
                     >
-                
                         Frodo
-                    
                     </Nav.Link>
 
                 </Nav>
@@ -38,22 +35,13 @@ export default function Header({handleShowLogin, handleShowSignUp}) {
 
             <Nav className='ml-auto me-5'>
 
-                <LinkContainer to='/login'>
-
-                    <Nav.Link onClick={handleShowLogin} className='custom-white-text'>Login</Nav.Link>
-
-                </LinkContainer>
-
-                <LinkContainer to='/signup'>
-
-                    <Nav.Link onClick={handleShowSignUp} className='custom-white-text'>Sign Up</Nav.Link>
-
-                </LinkContainer>
+                <Nav.Link onClick={handleShowLogin} className='custom-white-text'>Login</Nav.Link>
+                <Nav.Link onClick={handleShowSignUp} className='custom-white-text'>Sign Up</Nav.Link>
 
             </Nav>
 
         </Navbar>
 
-    )
+    );
 
 }

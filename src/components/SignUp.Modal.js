@@ -2,7 +2,6 @@
 // https://blog.logrocket.com/building-react-modal-module-with-react-router/
 
 import React, {useEffect, useState} from 'react';
-import { useNavigate } from 'react-router-dom';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
@@ -13,13 +12,17 @@ export default function SignUp({showSignUp, handleCloseSignUp, handleSubmitSignU
     const[lastName, setLastName] = useState('');
     const[email, setEmail] = useState('');
     const[password, setPassword] = useState('');
-    const navigate = useNavigate();
 
     const onSubmit = (e) => {
         e.preventDefault();
         handleSubmitSignUp({firstName, lastName, email, password});
+
+        setFirstName('');
+        setLastName('');
+        setEmail('');
+        setPassword('');
+
         handleCloseSignUp();
-        navigate('/');
     }
 
     return (

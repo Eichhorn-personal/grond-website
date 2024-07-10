@@ -1,28 +1,30 @@
 import React, {useState} from 'react';
-import { useNavigate } from 'react-router-dom';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
-export default function Login({show, handleClose, handleSubmit}) {
+export default function Login({showLogin, handleCloseLogin, handleSubmitLogin}) {
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [rememberMe, setRememberMe] = useState(false);
-    const navigate = useNavigate();
 
     const onSubmit = (e) => {
         e.preventDefault();
-        handleSubmit({email, password, rememberMe});
-        handleClose();
-        navigate('/');
+        handleSubmitLogin({email, password, rememberMe});
+
+        setEmail('');
+        setPassword('');
+        setRememberMe(false);
+
+        handleCloseLogin();
     }
 
     return (
 
         <Modal 
-            show={show}
-            onHide={handleClose}
+            show={ showLogin }
+            onHide={ handleCloseLogin }
             centered
             backdrop="static"
         >
@@ -91,5 +93,5 @@ export default function Login({show, handleClose, handleSubmit}) {
             </Modal.Body>  
 
         </Modal>
-    );
+    )
 }

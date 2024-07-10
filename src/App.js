@@ -1,84 +1,69 @@
 import React, {useState} from 'react';
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import Layout from './components/Layout.js';
-import Login from './components/Login.Component.js';
-import SignUp from './components/Signup.Component.js';
+
+import Header from './components/Header.js';
+import TitleSection from './components/TitleSection.js';
+import FeaturesSection from './components/FeaturesSection.js';
+import PricingSection from './components/PricingSection.js';
+import Footer from './components/Footer.js';
+
+import SignUp from './components/SignUp.Modal.js';
+import Login from './components/Login.Modal.js';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/app.css';
 
-function App() {
-    const [showLogin, setShowLogin] = useState(false);
+export default function App() {
+
     const [showSignUp, setShowSignUp] = useState(false);
+    const [showLogin, setShowLogin] = useState(false);
+
+
+    const handleShowSignUp = () => { setShowSignUp(true); };
+    const handleCloseSignUp = () => { setShowSignUp(false); };
+
+    const handleShowLogin = () => { setShowLogin(true); };
+    const handleCloseLogin = () => { setShowLogin(false); };
 
     const handleSubmitSignUp = ({firstName, lastName, email, password}) => {
         // Handle the signup logic here
-        console.log('First name: ', firstName);
-        console.log('Last name: ', lastName);
-        console.log('Email: ', email);
-        console.log('Password: ', password);
+        console.log('Handling signup:', { firstName, lastName, email, password });
         setShowSignUp(false);
-    }
+    };
 
     const handleSubmitLogin = ({email, password, rememberMe}) => {
         // Handle the login logic here
-        console.log('Email: ', email);
-        console.log('Password: ', password);
-        console.log('Remember Me: ', rememberMe);
+        console.log('Handling login:', { email, password, rememberMe });
         setShowLogin(false);
-    };
-    
-    const handleShowLogin = () => {
-        setShowLogin(true);
-    };
-
-    const handleCloseLogin = () => {
-        // Handle closing logic here
-        setShowLogin(false);
-    };
-
-    const handleShowSignUp = () => {
-        setShowSignUp(true);
-    };
-
-    const handleCloseSignUp = () => {
-        // Handle closing logic here
-        setShowSignUp(false);
     };
 
     return (
 
-        <>
-            <Layout handleShowLogin={handleShowLogin} handleShowSignUp={handleShowSignUp} />
+        <div className='App gradient-background-dark'>
+
+            <Header handleShowSignUp={handleShowSignUp} handleShowLogin={handleShowLogin}/> 
             
-            {showLogin && (
-                <Login handleSubmitLogin={handleSubmitLogin} handleCloseLogin={handleCloseLogin} />
-            )}
+            <TitleSection />
 
-            {showSignUp && (
-                <SignUp handleSubmitSignUp={handleSubmitSignUp} handleCloseSignUp={handleCloseSignUp} />
-            )}
+            <FeaturesSection />
 
+            <PricingSection />
 
-            <Routes>
-                <Route path="/" element={<Layout handleShowLogin={handleShowLogin} handleShowSignUp={handleShowSignUp} />} />
-                <Route path='/login' element={<Login showLogin={showLogin} handleSubmitLogin={handleSubmitLogin} handleCloseLogin={handleCloseLogin} />} />
-                <Route path='/signup' element={<SignUp showSignUp={showSignUp} handleSubmitSignUp={handleSubmitSignUp} handleCloseSignUp={handleCloseSignUp} />} />
-            </Routes>
-        </>
+            <Footer />
+
+            <SignUp 
+                showSignUp={showSignUp} 
+                handleCloseSignUp={handleCloseSignUp} 
+                handleSubmitSignUp={handleSubmitSignUp} 
+            />
+
+            <Login
+                showLogin={showLogin}
+                handleCloseLogin={handleCloseLogin}
+                handleSubmitLogin={handleSubmitLogin}
+            />
+
+        </div>
+
     );
 
-}
-
-export default function AppWrapper() {
-
-    return (
-
-        <Router>
-            <Routes>
-
-            <Route path='*' element={<App />} />
-
-            </Routes>
-        </Router>
-    );
 }

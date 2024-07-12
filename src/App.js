@@ -9,8 +9,8 @@ import Footer from './components/Footer.js';
 import SignUp from './components/SignUp.Modal.js';
 import Login from './components/Login.Modal.js';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './css/app.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+import './scss/custom.scss';
 
 export default function App() {
 
@@ -38,7 +38,7 @@ export default function App() {
 
     return (
 
-        <div className='App gradient-background-dark'>
+        <div className='App bg-dark text-light gradient-background-dark'>
 
             <Header handleShowSignUp={handleShowSignUp} handleShowLogin={handleShowLogin}/> 
             

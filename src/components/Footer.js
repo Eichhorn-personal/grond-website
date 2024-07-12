@@ -3,16 +3,18 @@ import React from "react";
 export default function Footer() {
 
     const openURL = (url) => {window.open(url, '_blank');}
+
+    const year = new Date().getFullYear();
     
     return(
 
         <footer className='w-100'>
 
-            <div className='custom-section-size d-flex justify-content-between align-items-center py-2 mx-auto px-3 px-md-0'>
+            <div className='w-75 d-flex justify-content-between align-items-center py-2 mx-auto px-3 px-md-0'>
 
                 <div className='small mb-0' style={{color: "white"}}>
 
-                    © 2024 grond.ai. All rights reserved.
+                    © {year} grond.ai. All rights reserved.
 
                 </div>
 

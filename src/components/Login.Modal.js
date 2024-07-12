@@ -31,7 +31,7 @@ export default function Login({showLogin, handleCloseLogin, handleSubmitLogin}) 
 
             <Modal.Header>
 
-                <Modal.Title>Sign In</Modal.Title>
+                <Modal.Title className='gold-text'>Sign In</Modal.Title>
 
             </Modal.Header>  
 
@@ -85,7 +85,7 @@ export default function Login({showLogin, handleCloseLogin, handleSubmitLogin}) 
                     </div>
 
                     <p className='forgot-password text-right'>
-                        Forogt <a href='#'>password?</a>
+                        Forgot <a href='#'>password?</a>
                     </p>
 
                 </Form>

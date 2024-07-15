@@ -37,7 +37,7 @@ export default function App() {
 
     return (
 
-        <div className='App bg-dark text-light gradient-background-dark'>
+        <div className='App bg-dark text-light'>
 
             <Header handleShowSignUp={handleShowSignUp} handleShowLogin={handleShowLogin}/> 
             

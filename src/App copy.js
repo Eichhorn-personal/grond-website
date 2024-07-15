@@ -9,7 +9,8 @@ import Footer from './components/Footer.js';
 import SignUp from './components/SignUp.Modal.js';
 import Login from './components/Login.Modal.js';
 
-import './css/app.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+import './scss/custom.scss';
 
 export default function App() {
 

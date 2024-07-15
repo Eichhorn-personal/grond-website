@@ -19,8 +19,61 @@
 }
 
 .gold-text {
-    color: #C1A96E;
+/*    color: #C1A96E; */
+    color: #9F6D36;
 }
+
+.title-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 75%;
+    padding: 1rem 0;
+    margin: 0 auto;
+    border-bottom: 1px solid #ddd;
+
+    .image-container {
+        width: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .grond-logo {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .text-container {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-left: 1rem;
+        margin: 0;
+
+        h1 {
+            margin: 0;
+        }
+
+        p {
+            margin-top: 0.5rem;
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
 
 .features-grid {
     display: grid;
@@ -36,6 +89,12 @@
     background: linear-gradient(135deg, #b3b3b3, #d9d9d9, #ffffff); 
     background-size: 180% 180%;
     animation: gradient-animation 18s ease infinite;
+}
+
+#PricingSection {
+    .custom-col {
+        margin-bottom: 20px;
+    }
 }
 
 #PricingSection .card {
@@ -100,6 +159,19 @@
 }
 
 @media (max-width: 576px) {
+    .custom-col {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .card {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
     .features-grid {
         grid-template-columns: 1fr;
     }

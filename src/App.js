@@ -5,9 +5,11 @@ import './css/app.css';
 
 export default function App() {
     return (
-        <div className='App'>
-            <Header/> 
-            <Footer />
+        <div id='grond-react-app' className='App'>
+            <div id='website-container' className='container'>
+                <Header /> 
+                <Footer />
+            </div>
         </div>
     );
 }

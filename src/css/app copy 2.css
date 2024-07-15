@@ -1,0 +1,255 @@
+
+.App {
+    font-family: 'Ubuntu', sans-serif;
+/*    background: #000000; */
+    background: linear-gradient(135deg, #000000, #262626, #4d4d4d); 
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.gold-text {
+/*    color: #C1A96E; */
+    color: #9F6D36;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #ddd;
+    width: 75%;
+    margin: 0 auto;
+    transition: height 0.3s ease;
+
+    &.menu-active {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+        order: 1; /* default order for large screens */
+        margin-right: 1rem;
+
+        a {
+            text-decoration: none;
+            color: #ffffff;
+/*            font-size: 1.25rem; */
+        }
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        max-width: 1200px;
+        padding: 0 2rem;
+    }
+
+    .nav-left {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        order: 2; /* ensure nav-left is second on large screens */
+        margin-right: auto;
+    }
+
+    .nav-left.show {
+        display: flex;
+    }
+
+    .nav-right {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        order: 3; /* ensure nav-right is third on large screens */
+    }
+
+    .nav-right.show {
+        display: flex;
+    }
+
+    .nav-left .nav-link, .nav-right .nav-link {
+        margin-right: 1.5rem;
+    } 
+
+    .nav-left .nav-link:last-child {
+        margin-right: 0;
+    }
+
+    .nav-link {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 1rem;
+        cursor: pointer;
+    
+        .img {
+            vertical-align: middle;
+            margin-right: 0.5 rem;
+        }
+    }
+
+    .menu-toggle {
+        display: none; /* makes menu-toggle invisible on large screens */
+        cursor: pointer;
+        font-size: 1.5rem; 
+        color: #ffffff;
+        background: transparent;
+        border: none;
+    }
+}
+
+.title-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 75%;
+    padding: 1rem 0;
+    margin: 0 auto;
+    border-bottom: 1px solid #ddd;
+
+    .image-container {
+        width: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .grond-logo {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .text-container {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-left: 1rem;
+        margin: 0;
+
+        h1 {
+            margin: 0;
+        }
+
+        p {
+            margin-top: 0.5rem;
+        }
+
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0.5rem 0;
+        transition: height 0.3s ease;
+
+        &.menu-active {
+            height: auto;
+        }
+    
+        .container {
+            flex-direction: row;
+            justify-content: flex-start; /* align items to the start */
+            align-items: center;
+            width: 100%;
+            padding: 0;
+            position: relative;
+        }
+
+        .nav-left {
+            display: none;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+            text-align: left;        
+            position: absolute;
+            top: 100%;
+            left: 2;
+            background-color: transparent;
+            z-index: 1000;
+        }
+    
+        .nav-left.show {
+            display: flex;
+            padding-left: 0;
+            padding-bottom: 1rem;
+        }
+
+        .nav-right {
+            flex-grow: 1;
+            display: flex;
+            justify-content: flex-end;
+            order: 4;
+        }
+
+        .nav-right.show {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            width: auto;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        .menu-toggle {
+            display: block;
+            order: 1; /* change order for small screens */
+            padding-left: 0;
+            margin-left: 0;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;          
+        }
+
+        .navbar-brand {
+            order: 2; /* change order for small screens */
+            margin-left: 0; /*remove margin-left to close the gap */
+            text-align: left;
+        }
+
+        .nav-right .nav-link {
+            margin-right: 0;
+        }
+
+        .nav-right .nav-link:first-child {
+            margin-bottom: 0;
+            padding-right: 1rem;
+        }
+    }
+
+    
+
+
+}
+
+@keyframes gradient-animation {
+    0% {
+    background-position: 0% 50%;
+    }
+    50% {
+    background-position: 100% 50%;
+    }
+    100% {
+    background-position: 0% 50%;
+    }
+}
+
+
+
+
+
+
+

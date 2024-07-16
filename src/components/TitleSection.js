@@ -21,20 +21,17 @@ export default function TitleSection() {
                 />
             </div>
             <div className='text-container'>
-                <div className='text-description'>
-                    <h1 className='gold-text'>grond.ai</h1>
-                    <p>
-                        Reimagine how you prioritze and handle process change 
-                        in your software design lifecycle. Make critical change 
-                        quicker and deliver the value your consumers want faster.
-                    </p>
-                </div>   
-                <div className='app-launch'>
-                    <button className='launch-grond' onClick={handleLaunchGrond}>
-                        <img className='app-icon' alt='' src={Frodo} width='30'/> 
-                        Launch Frodo
-                    </button>
-                </div>
+                <h1 className='gold-text'>grond.ai</h1>
+                <p>
+                    Reimagine how you prioritze and handle process change 
+                    in your software design lifecycle. Make critical change 
+                    quicker and deliver the value your consumers want faster.
+                </p>
+                <button className='launch-grond' onClick={handleLaunchGrond}>
+                    <img className='app-icon' alt='' src={Frodo} width='30'/> 
+                    Launch Frodo
+                </button>
+               
             </div>
         </div>    
     );

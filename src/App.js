@@ -13,7 +13,7 @@ export default function App() {
                 <Header /> 
                 <TitleSection />
 {/*                <FeaturesSection /> */}
-{/*                <Footer /> */}
+                <Footer />
             </div>
         </div>
     );

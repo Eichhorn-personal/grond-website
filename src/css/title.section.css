@@ -83,22 +83,32 @@
   .title-section {
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
   }
 
-  .image-container, .text-container {
-    width: 100%;
+  .image-container{
+    width: 100vw;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
   }
 
   .text-container {
-    align-items: center;
-    padding-left: 0;
-    text-align: center;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    align-items: flex-start;
+    padding-left: 1rem;
+  }
+
+  .text-container h1, .text-container p {
+    text-align: left;
   }
 
   .launch-grond {
     width: auto;
+    align-self: center;
+    text-align: center;
+    margin: 0 auto;
   }
 }

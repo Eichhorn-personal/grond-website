@@ -1,45 +1,41 @@
 import * as React from 'react';
-import { Col, Row } from 'react-bootstrap';
 
-import grondlogo from '../images/grond.ai.png';
+import '../css/title.section.css';
 
-function TitleSection() {
+import grondlogo from '../images/new.grond.ai.logo2.png';
+import Frodo from '../images/frodo.png';
+
+export default function TitleSection() {
+    const handleLaunchGrond = () => {
+        window.open('https://eichhorn-personal.github.io/frodo-alpha/', '_blank');
+    };
 
     return (
-
-        <div id='TitleSection' className='w-75 py-2 mx-auto px-3 px-md-0 border-bottom'>
-
-            <Row>
-
-                <Col className='md-6'>
-                
-                    <h1 className='mt-2 mb-4 gold-text'>grond.ai</h1>
-
+        <div className='title-section'>
+            <div className='image-container'>
+                <img
+                    className='grond-logo'
+                    src={grondlogo}
+                    alt='grond.ai company logo'
+                    loading='lazy'
+                />
+            </div>
+            <div className='text-container'>
+                <div className='text-description'>
+                    <h1 className='gold-text'>grond.ai</h1>
                     <p>
                         Reimagine how you prioritze and handle process change 
                         in your software design lifecycle. Make critical change 
                         quicker and deliver the value your consumers want faster.
                     </p>
-
-                </Col>
-
-                <Col className='md-6 d-flex justify-content-center align-items-center mb-4'>
-
-                    <img
-                        src={grondlogo}
-                        alt='grond.ai company logo'
-                        height='300'
-                        loading='lazy'
-                    />
-
-                </Col>
-
-            </Row>
-            
+                </div>   
+                <div className='app-launch'>
+                    <button className='launch-grond' onClick={handleLaunchGrond}>
+                        <img className='app-icon' alt='' src={Frodo} width='30'/> 
+                        Launch Frodo
+                    </button>
+                </div>
+            </div>
         </div>    
-       
     );
-
 }
-
-export default TitleSection;

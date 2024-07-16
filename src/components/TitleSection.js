@@ -28,7 +28,7 @@ export default function TitleSection() {
                     quicker and deliver the value your consumers want faster.
                 </p>
                 <button className='launch-grond' onClick={handleLaunchGrond}>
-                    <img className='app-icon' alt='' src={Frodo} width='30'/> 
+                    <img className='app-icon' alt='' src={Frodo}/> 
                     Launch Frodo
                 </button>
                

@@ -41,11 +41,11 @@
     display: inline-block;
     margin-right: 10px;
     vertical-align: middle;
-    width: 40px;
+    width: 30px;
   }
 
   .launch-grond {
-      padding: 1rem 2rem;
+      padding: 1rem 1rem;
       font-size: 1.5rem;
       background: linear-gradient(45deg, #392714, #5f4121, #845b2e);
       background-size: 100vh 100vw;
@@ -81,12 +81,13 @@
 
 @media (max-width: 768px) {
   .title-section {
+    width: 100%;
     flex-direction: column;
     align-items: center;
   }
 
   .image-container{
-    width: 100vw;
+    width: 100%;
     margin: 0;
     padding: 0;
     display: flex;
@@ -94,21 +95,23 @@
   }
 
   .text-container {
-    width: 100vw;
-    margin: 0;
-    padding: 0;
+    width: 100%;
     align-items: flex-start;
-    padding-left: 1rem;
   }
 
   .text-container h1, .text-container p {
     text-align: left;
   }
 
+  .text-container p {
+    padding-right: 2rem;
+  }
+
   .launch-grond {
     width: auto;
     align-self: center;
     text-align: center;
+    padding-left: 0;
     margin: 0 auto;
   }
 }

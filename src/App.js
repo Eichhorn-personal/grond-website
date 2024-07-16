@@ -12,8 +12,8 @@ export default function App() {
             <div id='website-container' className='container'>
                 <Header /> 
                 <TitleSection />
-                <FeaturesSection />
-                <Footer />
+{/*                <FeaturesSection /> */}
+{/*                <Footer /> */}
             </div>
         </div>
     );

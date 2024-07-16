@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/grond-website/static/css/main.1cee8a83.css",
-    "main.js": "/grond-website/static/js/main.a73dd9e8.js",
+    "main.css": "/grond-website/static/css/main.77f0fb0f.css",
+    "main.js": "/grond-website/static/js/main.d6cff8f6.js",
     "static/media/new.grond.ai.logo2.png": "/grond-website/static/media/new.grond.ai.logo2.d0112c1b14e6fc5a227f.png",
     "static/media/frodo.png": "/grond-website/static/media/frodo.1db75513d000b3c238e7.png",
     "index.html": "/grond-website/index.html",
-    "main.1cee8a83.css.map": "/grond-website/static/css/main.1cee8a83.css.map",
-    "main.a73dd9e8.js.map": "/grond-website/static/js/main.a73dd9e8.js.map"
+    "main.77f0fb0f.css.map": "/grond-website/static/css/main.77f0fb0f.css.map",
+    "main.d6cff8f6.js.map": "/grond-website/static/js/main.d6cff8f6.js.map"
   },
   "entrypoints": [
-    "static/css/main.1cee8a83.css",
-    "static/js/main.a73dd9e8.js"
+    "static/css/main.77f0fb0f.css",
+    "static/js/main.d6cff8f6.js"
   ]
 }

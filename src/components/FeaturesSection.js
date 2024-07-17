@@ -4,7 +4,7 @@ import '../css/features.section.css';
 
 export default function FeaturesSection() {
     return (
-        <div className='features-section'>
+        <div id='features' className='features-section'>
             <div className='features-title'>
                 <h1 className='gold-text'>Product Features</h1>
             </div>

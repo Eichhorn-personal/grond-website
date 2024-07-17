@@ -97,9 +97,6 @@ export default function FeaturesSection() {
                     </div>
                 </div>
 
-
-
-
             </div>
         </div>
     );

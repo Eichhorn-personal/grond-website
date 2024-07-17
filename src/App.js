@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './components/Header.js';
 import TitleSection from './components/TitleSection.js';
 import FeaturesSection from './components/FeaturesSection.js';
+import PricingSection from './components/PricingSection.js';
 import Footer from './components/Footer.js';
 
 import './css/app.css';
@@ -13,6 +14,7 @@ export default function App() {
                 <Header /> 
                 <TitleSection />
                 <FeaturesSection />
+                <PricingSection />
             </div>
             <Footer />
         </div>

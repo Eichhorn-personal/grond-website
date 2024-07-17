@@ -5,9 +5,12 @@ import '../css/features.section.css';
 export default function FeaturesSection() {
     return (
         <div className='features-section'>
-            <h1 className='gold-text'>Product Features</h1>
+            <div className='features-title'>
+                <h1 className='gold-text'>Product Features</h1>
+            </div>
             <div className='features-grid'>
-                <div className='feature-card'>
+
+                <div className='card-grid'>
                     <div className='card-icon'>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -30,7 +33,8 @@ export default function FeaturesSection() {
                         </p>
                     </div>
                 </div>
-                <div className='feature-card'>
+
+                <div className='card-grid'>
                     <div className='card-icon'>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +56,8 @@ export default function FeaturesSection() {
                         </p>
                     </div>
                 </div>
-                <div className='feature-card'>
+
+                <div className='card-grid'>
                     <div className='card-icon'>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +78,8 @@ export default function FeaturesSection() {
                         </p>
                     </div>
                 </div>
-                <div className='feature-card'>
+
+                <div className='card-grid'>
                     <div className='card-icon'>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -90,6 +96,10 @@ export default function FeaturesSection() {
                         <p className='card-content'>tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus</p>
                     </div>
                 </div>
+
+
+
+
             </div>
         </div>
     );

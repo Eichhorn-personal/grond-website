@@ -19,8 +19,15 @@ export default function FeaturesSection() {
                         </svg>
                     </div>
                     <div className='card-container'>
-                        <h4 className='card-title'>Easy to use</h4>
-                        <p className='card-content'>Fast, streamlined, and efficient</p>
+                        <h4 className='card-title'>
+                            Bug Review Board (BRB)
+                        </h4>
+                        <p className='card-content'>
+                            Implement a centeralized bug and
+                            change process so everyone has a 
+                            single source of truth across a
+                            complicated landscape
+                        </p>
                     </div>
                 </div>
                 <div className='feature-card'>
@@ -35,8 +42,14 @@ export default function FeaturesSection() {
                         </svg>
                     </div>
                     <div className='card-container'>
-                        <h4 className='card-title'>Status Reports</h4>
-                        <p className='card-content'>Visual Reporting that makes sense</p>
+                        <h4 className='card-title'>
+                            Status Reports
+                        </h4>
+                        <p className='card-content'>
+                            Visual Reporting that ties change and
+                            testing status together so you always
+                            know where you are
+                        </p>
                     </div>
                 </div>
                 <div className='feature-card'>
@@ -52,8 +65,12 @@ export default function FeaturesSection() {
                         </svg>
                     </div>
                     <div className='card-container'>
-                        <h4 className='card-title'>Business value</h4>
-                        <p className='card-content'>Prioritize change quicker and provide value faster</p>
+                        <h4 className='card-title'>
+                            Business value
+                        </h4>
+                        <p className='card-content'>
+                            Prioritize change quicker and provide value faster
+                        </p>
                     </div>
                 </div>
                 <div className='feature-card'>

@@ -3,15 +3,16 @@
     font-family: 'Ubuntu', sans-serif;
     background: linear-gradient(135deg, #000000, #262626, #4d4d4d); 
     background-size: 180% 180%;
-    animation: gradient-animation 18s ease infinite;
+    animation: gradient-animation 9s ease infinite;
 }
 
 .container {
-    flex: 1;
-    max-width: 100%;
+    width: 90%;
+    max-width: 90%;
     height: 100vh;
     margin: 0 auto;
     padding: 0 15px;
+    box-sizing: border-box;
 }
 
 body, html {
@@ -37,7 +38,8 @@ body, html {
 
 @media (max-width: 768px) {
     .container {
-        max-width: 100%;
+        width: 90%;
+        max-width: 90%;
         height: 100%;
         margin: 0 auto;
         padding: 0 15px;

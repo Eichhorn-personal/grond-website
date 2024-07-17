@@ -30,6 +30,7 @@
     padding-left: 1rem;
     color: white;
     flex-grow: 1;
+    margin: 0;
   }
 
   .text-container p {
@@ -45,7 +46,6 @@
 
   .app-icon {
     display: inline-block;
-    margin-right: 10px;
     vertical-align: middle;
     width: 30px;
   }
